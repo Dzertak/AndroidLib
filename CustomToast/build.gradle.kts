@@ -94,8 +94,8 @@ publishing {
     publications {
         register<MavenPublication>("release",) {
             groupId = "com.github.dzertak"
-            artifactId = "com.trackensure.multiplatformlib"
-            version = "1.0.0"
+            artifactId = "com.dzertak.customtoast"
+            version = "1.0.1"
             pom {
                 description.set("First release")
             }
