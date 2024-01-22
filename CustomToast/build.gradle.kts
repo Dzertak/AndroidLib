@@ -94,8 +94,8 @@ publishing {
     publications {
         register<MavenPublication>("release",) {
             groupId = "com.github.dzertak"
-            artifactId = "com.dzertak.customtoast"
-            version = "1.0.1"
+            artifactId = "AndroidLib"
+            version = "1.0.2"
             pom {
                 description.set("First release")
             }

@@ -5,4 +5,4 @@ before_install:
   - ./scripts/prepareJitpackEnvironment.sh
 install:
   - FILE="-Dfile=CustomToast-debug.aar" #com-atifqamar-customtoast.aar
-  - mvn install:install-file $FILE -DgroupId=com.github.dzertak -DartifactId=com.dzertak.customtoast -Dversion=1.0.1 -Dpackaging=aar -DgeneratePom=true
+  - mvn install:install-file $FILE -DgroupId=com.github.dzertak -DartifactId=AndroidLib -Dversion=1.0.2 -Dpackaging=aar -DgeneratePom=true
