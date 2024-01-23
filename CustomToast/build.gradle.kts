@@ -27,7 +27,9 @@ android {
 
     defaultConfig {
         minSdk = 24
-
+        aarMetadata {
+            minCompileSdk = 24
+        }
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -90,12 +92,15 @@ dependencies {
 //    }
 //}
 
+group = "com.github.dzertak"
+version = "1.0.3"
+
 publishing {
     publications {
-        register<MavenPublication>("release",) {
+        register<MavenPublication>("AndroidLib",) {
             groupId = "com.github.dzertak"
             artifactId = "AndroidLib"
-            version = "1.0.2"
+            version = "1.0.3"
             pom {
                 description.set("First release")
             }
@@ -106,9 +111,9 @@ publishing {
         }
         repositories {
             maven {
-                mavenLocal()
-//                name = "myrepoBase64"
-//                url = uri("${project.buildDir}/repo")
+               // mavenLocal()
+                name = "AndroidLib"
+                url = uri("${project.buildDir}/repo")
             }
         }
     }
