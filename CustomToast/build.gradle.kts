@@ -93,14 +93,14 @@ dependencies {
 //}
 
 group = "com.github.dzertak"
-version = "1.0.3"
+version = "1.0.4"
 
 publishing {
     publications {
         register<MavenPublication>("AndroidLib",) {
             groupId = "com.github.dzertak"
             artifactId = "AndroidLib"
-            version = "1.0.3"
+            version = "1.0.4"
             pom {
                 description.set("First release")
             }
